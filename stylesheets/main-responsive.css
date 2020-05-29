@@ -299,3 +299,15 @@ there.
         padding-right: 10px;
     }
 }
+
+
+/* eigen css om testimonial op mobile kleiner te krijgen vanwegen wegdoen originele testimonial carrousel*/
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+    .sub-heading {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
