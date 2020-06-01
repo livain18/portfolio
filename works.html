@@ -145,6 +145,7 @@
 <!-- end : masthead -->
 
 
+
     <!-- MASTER CONTENT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section class="mastwrap add-bottom">
@@ -162,7 +163,8 @@
                 <!--works filter panel :starts -->
                 <div class="works-filter-wrap">
                     <ul class="works-filter  text-right clearfix font2">
-                        <li><a id="all" href="#" data-filter="*" class="active"><span>All</span></a></li><li><a href="#" data-filter=".Bannering"><span>Bannering</span></a></li>
+                        <li><a id="all" href="#" data-filter="*" class="active"><span>All</span></a></li>
+                        <li><a href="#" data-filter=".Bannering"><span>Bannering</span></a></li>
                         <li><a href="#" data-filter=".brandpages"><span>Brandpages</span></a></li>
                         <li><a href="#" data-filter=".resizes"><span>Resizes</span></a></li>
                         <li><a href="#" data-filter=".shops"><span>Promoshops</span></a></li>
@@ -405,6 +407,53 @@
     <script src="javascripts/libs/common.js"></script>
     <script src="elements/js/elements.js"></script>
     <script src="javascripts/custom/main.js"></script>
+
+    <script>
+      
+      $(document).ready(function () {
+      
+          $('[data-filter=".Bannering"]').click(function(){
+            if($("div").hasClass("works-item-inner")) {
+              $(".works-item-inner" ).remove();
+            }
+            else {
+            }
+          })
+          $('[data-filter=".brandpages"]').click(function(){
+            if($("div").hasClass("works-item-inner")) {
+              $(".works-item-inner" ).remove();
+            }
+            else {
+            }
+          })
+          $('[data-filter=".resizes"]').click(function(){
+            if($("div").hasClass("works-item-inner")) {
+              $(".works-item-inner" ).remove();
+            }
+            else {
+            }
+          })
+          $('[data-filter=".shops"]').click(function(){
+            if($("div").hasClass("works-item-inner")) {
+              $(".works-item-inner" ).remove();
+            }
+            else {
+            }
+          })
+          $('[data-filter="*"]').click(function(){
+            if($("div").hasClass("works-item-inner")) {
+              
+            }
+            else {
+              $('[data-gall="banners"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Bannering</span></p></div>');
+              $('[data-gall="brandpages"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Brandpages</span></p></div>');
+              $('[data-gall="resizes"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Resizing @ editing</span></p></div>');
+              $('[data-gall="shops"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Promotion shops</span></p></div>');
+            }
+          })
+      })
+      
+    </script>
 
 </body>
 

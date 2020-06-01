@@ -216,11 +216,7 @@
 
         //VENOBOX
         $('.venobox, .image-lightbox-link').venobox({
-            numeratio: true
-        });
-
-        $('.venobox_custom').venobox({
-            spinner: 'wandering-cubes'
+            numeratio: true,
         });
 
         //BX SLIDER
@@ -228,6 +224,7 @@
           $('.bxslider').bxSlider({
             adaptiveHeight:true
           });
+          $('.venobox').venobox();
         });
 
 

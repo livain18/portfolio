@@ -606,7 +606,7 @@ venobox: function(options) {
 var defaults = {
 framewidth: '',
 frameheight: '',
-border: '0',
+border: '',
 bgcolor: '#fff',
 titleattr: 'title', // specific attribute to get a title (e.g. [data-title]) - thanx @mendezcode
 numeratio: false,
