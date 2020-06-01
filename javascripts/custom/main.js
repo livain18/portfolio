@@ -224,7 +224,6 @@
           $('.bxslider').bxSlider({
             adaptiveHeight:true
           });
-          $('.venobox').venobox();
         });
 
 

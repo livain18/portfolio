@@ -275,28 +275,28 @@ body{
 .venoframe{
     border: none;
     width: 960px;
-    height: 720px;
+    /* height: 720px; */
 }
 .figlio{
-max-height: 720px;
+/* max-height: 720px; */
 }
 @media (max-width: 992px) {
     .venoframe{
         width: 640px;
-        height: 480px;
+        /* height: 480px; */
     }
-    .figlio{
+    /* .figlio{
     max-height: 480px;
-    }
+    } */
 }
 @media (max-width: 767px) {
     .venoframe{
         width: 420px;
-        height: 315px;
+        /* height: 315px; */
     }
-    .figlio{
+    /* .figlio{
     max-height: 315px;
-    }
+    } */
 }
 @media (max-width: 460px) {
     .vbox-inline{
@@ -305,11 +305,11 @@ max-height: 720px;
 
     .venoframe{
         width: 100%;
-        height: 260px;
+        /* height: 260px; */
     }
-    .figlio{
+    /* .figlio{
     max-height: 260px;
-    }
+    } */
 }
 
 /* ------- PLease do NOT edit this! (or do it at your own risk) ------ */
@@ -325,7 +325,7 @@ max-height: 720px;
     float: left;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .vbox-container img{
     max-width: 100%;
@@ -346,3 +346,4 @@ max-height: 720px;
     overflow: hidden;
     z-index: 1;
 }
+

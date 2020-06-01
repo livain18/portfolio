@@ -650,8 +650,52 @@ top = -top;
 extraCss = obj.data( 'css' ) || "";
 //$('body').wrapInner('<div class="vwrap"></div>');
 vwrap = $('.vwrap');
-core = '<div class="vbox-overlay ' + extraCss + '" style="background:'+ overlayColor +'; position:fixed !important;"><div class="vbox-preloader">Loading...</div><div class="vbox-container"><div class="vbox-content"></div></div><div class="vbox-title"></div><div class="vbox-num">0/0</div><div class="vbox-close">X</div><div class="vbox-next">next</div><div class="vbox-prev">prev</div></div>';
-$('body').append(core);
+// core = '<div class="vbox-overlay ' + extraCss + '" style="background:'+ overlayColor +';position:fixed !important;"><div class="vbox-preloader">Loading...</div><div class="vbox-container"><div class="vbox-content"></div></div><div class="vbox-title"></div><div class="vbox-num">0/0</div><div class="vbox-close">X</div><div class="vbox-next">next</div><div class="vbox-prev">prev</div></div>';
+// $('body').append(core);
+
+// lieven: andere code (core1), origineel: core
+// if opening small image (banners) then the venobox will stay fixed, if images are bigger (brandpages,...) then de page wil take the height of that specific image
+//all this in order to have a greater view of the larger images
+$(document).ready(function () {
+
+	if($("div").hasClass("vbox-overlay")) {
+ 
+		  let imgHeight = $(".figlio").height();
+		//   console.log('img',imgHeight);
+		  if(imgHeight <=1000) {
+			$('.vbox-overlay ').css({"position":"fixed", "top":"0", "width":"100%"});
+		  } else {
+			$('.vbox-overlay ').css({"position":"absolute","width":"100%"});
+			$("body").css({"height":imgHeight});
+		  }
+		
+	  } else if($("div").hasClass("vbox-overlay")=== false) {
+		$('.vbox-overlay ').css({"position":"absolute","width":"100%"});
+		$("body").css({"height":"inherit"});
+	  }
+
+	setInterval(function() {
+		if($("div").hasClass("vbox-overlay")) {
+ 
+			let imgHeight = $(".figlio").height();
+			// console.log('img',imgHeight);
+			if(imgHeight <=1000) {
+			  $('.vbox-overlay ').css({"position":"fixed", "top":"0", "width":"100%"});
+			} else {
+			  $('.vbox-overlay ').css({"position":"absolute","width":"100%"});
+			  $("body").css({"height":imgHeight});
+			}
+		  
+		} else if($("div").hasClass("vbox-overlay")=== false) {
+			$('.vbox-overlay ').css({"position":"absolute","width":"100%"});
+			$("body").css({"height":"inherit"});
+		}
+	}, 500)
+  
+})
+
+core1 = '<div class="vbox-overlay ' + extraCss + '" style="background:'+ overlayColor +';"><div class="vbox-preloader">Loading...</div><div class="vbox-container"><div class="vbox-content"></div></div><div class="vbox-title"></div><div class="vbox-num">0/0</div><div class="vbox-close">X</div><div class="vbox-next">next</div><div class="vbox-prev">prev</div></div>';
+$('body').append(core1);
 overlay = $('.vbox-overlay');
 container = $('.vbox-container');
 content = $('.vbox-content');
@@ -722,6 +766,8 @@ vwrap.css({
 }).data('top', top);
 ////$(window).scrollTop(0);
 }
+
+
 /* -------- CHECK NEXT / PREV -------- */
 function checknav(){
 thisgall = obj.data('gall');
@@ -848,6 +894,8 @@ keyNavigationDisabled = false;
 });
 }
 };
+
+
 /* -------- NAVIGATE WITH ARROW KEYS -------- */
 $('body').keydown(function(e) {
 if(e.keyCode == 37 && prevok == true) { // left
@@ -990,8 +1038,11 @@ margine = (finH - sonH)/2;
 content.css('margin-top', margine);
 content.css('margin-bottom', margine);
 }else{
-content.css('margin-top', '40px');
-content.css('margin-bottom', '40px');
+	// lieven: krijg de margins goed op mobile voor venobox
+content.css('margin-top', '60px');
+content.css('margin-bottom', '0px');
+// content.css('margin-top', '40px');
+// content.css('margin-bottom', '40px');
 }
 content.animate({
 'opacity': '1'
@@ -1007,8 +1058,10 @@ margine = (finH - sonH)/2;
 content.css('margin-top', margine);
 content.css('margin-bottom', margine);
 }else{
-content.css('margin-top', '40px');
-content.css('margin-bottom', '40px');
+content.css('margin-top', '60px');
+content.css('margin-bottom', '0px');
+// content.css('margin-top', '40px');
+// content.css('margin-bottom', '40px');
 }
 }
 }
