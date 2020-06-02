@@ -321,8 +321,8 @@
               
             }
             else {
-              $('[data-gall="foodie"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Foodie</span></p></div>');
-              $('[data-gall="projects"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Projects</span></p></div>');
+              $('[data-gall="foodie"]').parents('.works-item').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Foodie</span></p></div>');
+              $('[data-gall="projects"]').parents('.works-item').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Projects</span></p></div>');
             }
           })
       })

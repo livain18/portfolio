@@ -445,10 +445,10 @@
               
             }
             else {
-              $('[data-gall="banners"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Bannering</span></p></div>');
-              $('[data-gall="brandpages"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Brandpages</span></p></div>');
-              $('[data-gall="resizes"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Resizing @ editing</span></p></div>');
-              $('[data-gall="shops"]').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Promotion shops</span></p></div>');
+              $('[data-gall="banners"]').parents('.works-item').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Bannering</span></p></div>');
+              $('[data-gall="brandpages"]').parents('.works-item').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Brandpages</span></p></div>');
+              $('[data-gall="resizes"]').parents('.works-item').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Resizing @ editing</span></p></div>');
+              $('[data-gall="shops"]').parents('.works-item').append('<div class="works-item-inner ImageOverlayCl"><p class="valign text-center"><span class="white font1">Promotion shops</span></p></div>');
             }
           })
       })
