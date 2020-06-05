@@ -301,7 +301,7 @@ there.
 }
 
 
-/* eigen css om testimonial op mobile kleiner te krijgen vanwegen wegdoen originele testimonial carrousel*/
+/* lieven, eigen css om testimonial op mobile kleiner te krijgen vanwegen wegdoen originele testimonial carrousel*/
 
 @media screen and (min-width: 300px) and (max-width: 420px) {
     .sub-heading {
@@ -309,5 +309,100 @@ there.
         line-height: 14px;
         letter-spacing: 1px;
         text-transform: uppercase;
+    }
+}
+
+/* lieven, responsive profile pic */
+
+@media screen and (max-width: 320px) {
+    .profile-pic {
+        width: 75%;
+        /* padding-top: 62px; */
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .profile-pic {
+        width: 72%;
+        /* padding-top: 62px; */
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .profile-pic {
+        width: 64%;
+        
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .profile-pic {
+        width: 66%;
+        
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .profile-pic {
+        width: 53%;
+        
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .profile-pic {
+        width: 46%;
+        
+    }
+}
+
+@media screen and (min-width: 668px) {
+    .profile-pic {
+        width: 40%;
+        
+    }
+}
+
+@media screen and (min-width: 737px) {
+    .profile-pic {
+        width: 57%;
+        
+        
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .profile-pic {
+        width: 29%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .profile-pic {
+        width: 28%;
+        margin-top: -62px;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    .profile-pic {
+        width: 24.5%;
+        
+    }
+}
+
+@media screen and (min-width: 1361px) {
+    .profile-pic {
+        width: 20%;
+        
+    }
+}
+
+@media screen and (min-width: 1481px) {
+    .profile-pic {
+        width: 20%;
+        /* margin-top: -68px; */
     }
 }

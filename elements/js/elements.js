@@ -113,19 +113,30 @@ $(function ($) {
     });
 
 
-     $('.skills').waypoint(function(direction) {
+    $.fn.isInViewport = function () {
+        let elementTop = $(this).offset().top;
+        let elementBottom = elementTop + $(this).outerHeight();
+    
+        let viewportTop = $(window).scrollTop();
+        let viewportBottom = viewportTop + $(window).height();
+    
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+     $('.progress-bar').waypoint(function(direction) {
         // $(".progress-bar").animate({
         //     width: "70%"
         // }, 2500);
 
-        $('.progress-bar').each(function() {
+        // $('.progress-bar').each(function() {
             var progressValue = $(this).attr('data-skills-value');
-            $(this).animate({
-                            width: progressValue+"%"
-                            }, 2500);
-        });
-
-    }, { offset: '35%' });
+                if($(this).isInViewport()) {
+                    $(this).animate({
+                        width: progressValue+"%"
+                    }, 2500); 
+                }
+    }
+    , { offset: '100%' });
 
 
 
