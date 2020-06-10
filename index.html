@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="stylesheets/main-bg.css">
     <link rel="stylesheet" href="stylesheets/main-responsive.css">
 
+
     <!-- LESS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!-- <link rel="stylesheet/less" type="text/css" href="less/color.less">
@@ -63,9 +64,11 @@
 
     <!-- Preloader
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div id="preloader">
+
+    <!-- <div id="preloader">
         <div id="status"></div>
-    </div>
+    </div> -->
+
     <!-- end : preloader -->
 
 
@@ -183,7 +186,7 @@
                 <h6 class="super-text  font2bold black">Hello!<br>I am Lieven Vandiest</h6>
               </article>
               <article class="col-md-4 col-md-offset-2 text-left ">
-                <h3 class="main-heading  font2light black">A self-taught digital designer / webdeveloper from Belgium<br>
+                <h3 class="main-heading  font2light black">A self-taught digital designer & webdeveloper from Belgium<br>
                 </h3>
               </article>
         </div>
@@ -201,25 +204,33 @@
 </div> -->
 
       <section class="container-outer white-bg">
-      <section class="container">
+      <section class="container about">
         <img class="profile-pic center-block" src="images/portfolio-pic/profilepic-portfolio.png" alt="profile-picture">
         
         <!-- <div class="row add-top-quarter"> -->
-          <div class="row"></div>
-              <article class="col-md-8 col-md-offset-2 text-left ">
-                <h6 class="promo-text font2semibold black">About Me</h6>
-                <h3 class="main-heading  font2light black">
-                  I am a self-taught junior digital designer interested in the creation of various webapplications 
-                  from design to implementation, I caught the coding microbe during my studies. I’m eager to learn new things, 
-                  constantly improving myself through online courses, honest, easy-going and working well in teams.</p>
-              </article>
+          <div class="row">
+            <article class="col-md-12 text-left">
+              <h6 id="aboutme-title" class="promo-text font2semibold black">About Me</h6>
+            </article>
         </div>
-
+        <div class="row">
+          <article class="col-md-4 text-left ">
+            <h3 id="aboutme-strong" class="main-heading  font2light black">A self-taught junior digital designer & webdeveloper working mainly with html/css, javascript and photoshop. Open to all vacancies related to webdevelopment.</br class="mobile"></br class="lieven-mobile">
+              </h3>
+          </article>
+          <article  class="col-md-4 text-left">
+                  <p class="aboutme-text">I am interested in the creation of various webapplications from design to implementation who caught the coding microbe during his studies. Those studies have earned me a bachelor degree in automotive technology. Allthough i had several jobs in this industry, my interests in IT pushed me to re-educate myself in this branch. Great Company gave me the opportunity to further refine my skills and have my first job in IT for which i will be eternally grateful to them. </p></br class="lieven-mobile">
+          </article>
+          <article class="col-md-4 text-left">
+                  <p class="aboutme-text">To this point i've had several projects inside Great Company en worked as a consultant at ICI PARIS XL as a digital designer/webdeveloper to maintain their website and create new webpages. I’m eager to learn new things, 
+                  constantly improving myself through online courses, honest, easy-going and working well in teams. I'm currently also interested in react.js, a js library, in which i'm educating myself and of which newer projects will come up in my side-projects soon. </p>
+          </article>
+    </div>
 
         <div class="skills">
-        <div class="row add-top-quarter">
+        <div class="row pad-top-half">
           <article class="col-md-12 text-left  inner-pad">
-            <h6 class="promo-text font2semibold black">Skills</h6>
+            <h6 id="skills-title" class="promo-text font2semibold black">Skills</h6>
           </article>
     </div>
   
@@ -234,9 +245,9 @@
     </article>
   
     <article class="col-md-6 progress-container">
-        <h6 class="font2 dark">HTML/CSS<span class="font1 color">90%</span></h6>
+        <h6 class="font2 dark">HTML/CSS<span class="font1 color">80%</span></h6>
         <div class="progress active">
-            <div class="progress-bar dark-bg" data-skills-value="90"></div>
+            <div class="progress-bar dark-bg" data-skills-value="80"></div>
         </div>
     </article>
   </div>
@@ -279,7 +290,6 @@
 </section>
 
 
-
 <!-- ------------------------------------------------------------------ -->
 
 <section class="container-outer white-bg pad-top-half pad-bottom ">
@@ -291,12 +301,12 @@
       </article>
     </div>
   
-    <section id="works-container" class="works-container  works-masonry-container clearfix works-thumbnails-view">
+    <section id="container-employers-index">
   
          <!-- start : works-item -->
-         <div class="works-item  ImageWrapper works-item-one-half info logos ui text-center" style="border: 1px solid gray;">
-                 <img data-no-retina alt="" title="" class="img-responsive works-item-one-half" src="images/ICI_Paris_XL_logo_edit.jpg" style ="margin: 0 auto;"/>
-                 <a  href="works.html">
+         <div class="imageWidthIndex ImageWrapper works-item" style="border: 1px solid gray;">
+                 <img data-no-retina alt="" title="" class="img-responsive-index works-item-one-half" src="images/ICI_Paris_XL_logo_edit.jpg" style ="margin: 0 auto;"/>
+                 <a  href="ici-paris-xl.html">
                      <div class="works-item-inner ImageOverlayCl">
                        <p class="valign text-center"><span class="white font1">Ici Paris XL</span></p>
                      </div>
@@ -304,9 +314,9 @@
          </div>
          <!-- end : works-item -->
          <!-- start : works-item -->
-        <div class="works-item  ImageWrapper works-item-one-half info logos ui text-center" style="border: 1px solid gray;">
-                  <img data-no-retina alt="" title="" class="img-responsive works-item-one-half" src="images/logo_gc_edit.png" style ="margin: 0 auto;"/>
-                  <a  href="works1.html">
+        <div class="imageWidthIndex ImageWrapper works-item" style="border: 1px solid gray;">
+                  <img data-no-retina alt="" title="" class="img-responsive-index works-item-one-half" src="images/logo_gc_edit.png" style ="margin: 0 auto;"/>
+                  <a  href="great-company.html">
                       <div class="works-item-inner ImageOverlayCl">
                         <p class="valign text-center"><span class="white font1">Great Company</span></p>
                       </div>
@@ -331,7 +341,7 @@
         <div class="container">
           <div class="row">
                 <article class="col-md-12">
-          <section class="carousel-outer-wrap add-top-quarter">
+          <section class="carousel-outer-wrap">
               <!-- Set up your HTML -->
               <!-- <div class="owl-carousel owl-nav-sticky-extra-wide testimonial-carousel "> -->
 
@@ -340,7 +350,7 @@
                     <img alt="" title="" src="images/testimonial/0.jpeg">
                       <h3 class="sub-heading  font2 black">" Ik heb heel graag samengewerkt met Lieven. Lieven is heel toegankelijk, flexibel, heel vlot in de omgang en voert alle werkzaamheden perfect uit. Lieven is zeker een meerwaarde voor je team! "</h3>
                       <p>Marijke Vastenhaeck</p>
-                      <h5>Coordinator Digital Designers - ICI PARIS XL</h5>
+                      <h6>Coordinator Digital Designers - ICI PARIS XL</h6>
                       <ul class="testimonial-social">
                         <li><span class="ion-social-linkedin dark" style="font-size: 24px;"></span></li>
                       </ul>
@@ -370,6 +380,7 @@
       </section>
 
     </section>
+
     <!-- end : mastwrap -->
 
 

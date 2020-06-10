@@ -305,8 +305,8 @@ there.
 
 @media screen and (min-width: 300px) and (max-width: 420px) {
     .sub-heading {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 12px;
+        line-height: 15px;
         letter-spacing: 1px;
         text-transform: uppercase;
     }
@@ -406,3 +406,127 @@ there.
         /* margin-top: -68px; */
     }
 }
+
+/* lieven, responsive mobile, desktop */
+@media screen and (min-width: 300px) and (max-width: 991px) {
+    .madeby-mobile {
+      display: inline-block;
+      margin-top: 50px;
+    }
+  
+    .madeby-desktop {
+      display: none;
+    }
+
+    .lieven-mobile {
+        display: inline-block;
+    } 
+
+    .lieven-desktop {
+        display: none;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .madeby-mobile {
+      display: none;
+    }
+  
+    .madeby-desktop {
+      display: inline-block;
+    }
+
+    .lieven-mobile {
+        display: inline-block;
+    }
+
+    .lieven-desktop {
+        display: none;
+    }
+
+}
+/* lieven text about me kleiner op mobile */
+.imageWidthIndex {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+#container-employers-index {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-responsive-index {
+    display: block;
+    height: auto;
+    max-width: 60%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+    #aboutme-title {
+        margin-bottom: 0;
+        margin-top: 12px;
+    }
+
+    #aboutme-strong {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .aboutme-text {
+        color: #888;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+
+    #skills-title {
+        margin-bottom: 10px;
+        margin-top: 12px;
+    }
+
+    .testimonial-info {
+        padding: 50px 0px;
+        text-align: center;
+    }
+
+    #container-employers-index {
+        display: block;
+    }
+
+    .img-responsive-index {
+        max-width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    #aboutme-title {
+        margin-bottom: 0;
+        margin-top: 12px;
+    }
+
+    #skills-title {
+        margin-bottom: 10px;
+        margin-top: 12px;
+    }
+
+    #container-employers-index {
+        display: block;
+    }
+
+    .img-responsive-index {
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #aboutme-title {
+        margin-top: 20px;
+    }
+}
+
+
+

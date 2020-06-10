@@ -893,30 +893,6 @@ fieldset h1 {
   transition: all .8s linear;
 }
 
-@media screen and (min-width: 300px) and (max-width: 991px) {
-  .madeby-mobile {
-    display: inline-block;
-    margin-top: 50px;
-  }
-
-  .madeby-desktop {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .madeby-mobile {
-    display: none;
-  }
-
-  .madeby-desktop {
-    display: inline-block;
-  }
-}
-
-
-
-
 /* 
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
 7. Utilities
