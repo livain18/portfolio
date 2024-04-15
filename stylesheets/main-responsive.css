@@ -382,13 +382,13 @@ there.
 @media screen and (min-width: 993px) {
     .profile-pic {
         width: 28%;
-        margin-top: -62px;
+        margin-top: -55px;
     }
 }
 
 @media screen and (min-width: 1101px) {
     .profile-pic {
-        width: 24.5%;
+        width: 25%;
         
     }
 }
