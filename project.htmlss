@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="stylesheets/sinister.css">
     <link rel="stylesheet" href="stylesheets/venobox.css">
     <link rel="stylesheet" href="stylesheets/owl.carousel.css">
+    <link rel="stylesheet" href="stylesheets/jquery.bxslider.css">
     <link rel="stylesheet" href="stylesheets/slimmenu.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="stylesheets/main-bg.css">
@@ -55,8 +56,8 @@
 
     <!-- Preloader
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!--   
-    <div id="preloader">
+
+    <!-- <div id="preloader">
         <div id="status"></div>
     </div> -->
 
@@ -107,9 +108,10 @@
 
 
     <div class="social-block">
-      <li><a href="https://www.facebook.com/lieven.vandiest"><span class="ion-social-facebook black"></span></a></li>
-      <li><a href="https://www.linkedin.com/in/lieven-vandiest-105303139/"><span class="ion-social-linkedin black"></span></a></li>
-      <li><a href="https://github.com/livain18"><span class="ion-social-github black"></span></a></li>
+      <ul>
+        <li><a href="https://www.facebook.com/lieven.vandiest"><span class="ion-social-facebook black"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/lieven-vandiest-105303139/"><span class="ion-social-linkedin black"></span></a></li>
+        <li><a href="https://github.com/livain18"><span class="ion-social-github black"></span></a></li>
       </ul>
     </div>
 
@@ -126,21 +128,20 @@
 
             <ul class="main-menu ">
               <li>
-                  <a class="main-link font1 sub-menu-trigger activelink" href="index">About me</a>
+                  <a class="main-link font1 sub-menu-trigger" href="index.html">About me</a>
               </li>
               <li>
                   <a class="main-link font1 sub-menu-trigger">Career</a>
                   <div class="sub-menu font1">
-                    <a href="ici-paris-xl">Ici Paris XL</a>
-                    <a href="involv">Cognit - Involv</a>
-                    <a href="great-company">Great Company</a>
+                    <a href="ici-paris-xl.html">Ici Paris XL</a>
+                    <a href="great-company.html">Great Company</a>
                 </div>
               </li>
               <li>
-                  <a class="main-link font1 sub-menu-trigger" href="project">Side projects</a>
+                  <a class="main-link font1 sub-menu-trigger activelink" href="project.html">Side projects</a>
               </li>
               <li>
-                  <a class="main-link font1 sub-menu-trigger" href="contact">Say hello</a>
+                  <a class="main-link font1 sub-menu-trigger" href="contact.html">Say hello</a>
               </li>
             </ul>
       </nav>
@@ -165,20 +166,19 @@
 
 
 
-
     <!-- MASTER CONTENT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section class="mastwrap">
 
-
+<!-- 1ste project -->
       <section class="container about  pad-top pad-bottom">
 
         <div class="row">
               <article class="col-md-5 text-left  inner-pad">
-                <h6 class="super-text  font2bold black">Thank You</h6>
+                <h6 class="super-text  font2bold black">Robofriends</h6>
               </article>
               <article class="col-md-5 col-md-offset-2 text-left ">
-                <h3 class="main-heading  font2light black">We will reply to you soon.</h3>
+                <h3 class="main-heading  font2light black">React app to search for generated robots. </br><a href="https://livain18.github.io/robofriends" style="text-transform: lowercase;">https://livain18.github.io/robofriends</a></h3>
               </article>
         </div>
             
@@ -186,12 +186,34 @@
 
 
 
+<!-- 
+      <section class="container ">
+
+        <div class="row">
+              <article class="col-md-12 text-center inner-pad">
+                <ul class="bxslider ">
+                  <li><img alt="" title="" class="img-responsive" src="images/side-projects/Robofriends.png"/></li>
+                  <li><img alt="" title="" class="img-responsive" src="images/side-projects/robofriends2.png"/></li>
+                </ul>
+              </article>
+        </div>
+            
+      </section> -->
 
       <section class="container ">
 
         <div class="row">
               <article class="col-md-12 text-left inner-pad  ">
-                      <img alt="" title="" class="img-responsive" src="images/bg/01.jpg">
+              <!-- Set up your HTML -->
+              <div class="slider-carousel owl-carousel owl-nav-sticky-wide slider-carousel">
+
+                <div class="sample-carousel-block">
+                  <img alt="" title="" src="images/side-projects/Robofriends.png">
+                </div>
+                <div class="sample-carousel-block">
+                  <img alt="" title="" src="images/side-projects/robofriends2.png">
+                </div>
+              </div>
               </article>
         </div>
             
@@ -201,13 +223,77 @@
 
 
 
+      <section class="container-outer silver-bg">
+      <section class="container about  pad-top pad-bottom">
+
+        <div class="row">
+              <article class="col-md-12 text-left">
+                <p>Robofriends is a react application where cards are filtered according to the text in the search field. I have used the JSON placeholder API from Robohash to generate random robot faces for my dynamically generated cards. This was my first React.js project. It was created with an npm package; create-react-app and deployed through GitHub Pages.</p>
+                <a href="https://livain18.github.io/robofriends" class="btn  btn-oscar btn-oscar-dark add-top-quarter">View Project</a>
+              </article>
+        </div>
+        
+      </section>
+      </section>
+
+            <div class="container-fluid">
+            <div class="row">
+                <article class="col-md-12 map-wrap no-pad">
+                    <div id="map" style="height: 100px"></div>
+                </article>
+            </div>
+      </div>
+
+      <!-- <section class="container about  pad-top pad-bottom">
+
+        <div class="row">
+              <article class="col-md-5 text-left  inner-pad">
+                <h6 class="super-text  font2bold black">Coming soon</h6>
+              </article>
+              <article class="col-md-5 col-md-offset-2 text-left ">
+                <h3 class="main-heading  font2light black"></br></h3>
+              </article>
+        </div>
+            
+      </section> -->
+
+      <!-- 2de project -->
+      <!-- <section class="container ">
+
+        <div class="row">
+              <article class="col-md-12 text-left inner-pad  ">
+              
+              <div class="slider-carousel owl-carousel owl-nav-sticky-wide slider-carousel">
+
+                <div class="sample-carousel-block">
+                  <img alt="" title="" src="images/side-projects/5068.jpg">
+                </div>
+
+                <div class="sample-carousel-block">
+                  <img alt="" title="" src="images/side-projects/5068.jpg">
+                </div>
+              </div>
+              </article>
+        </div>
+            
+      </section> -->
 
 
 
 
 
+      <!-- <section class="container-outer silver-bg">
+      <section class="container about  pad-top pad-bottom">
 
-
+        <div class="row">
+              <article class="col-md-12 text-left">
+                <p>coming soon</p>
+                <a class="btn  btn-oscar btn-oscar-dark add-top-quarter">View Project</a>
+              </article>
+        </div>
+            
+      </section>
+      </section> -->
 
     </section>
     <!-- end : mastwrap -->
