@@ -450,6 +450,8 @@ there.
     display: block;
     overflow: hidden;
     position: relative;
+    width: 60%;
+    align-items: center;
 }
 
 #container-employers-index {
@@ -464,6 +466,10 @@ there.
 }
 
 @media screen and (min-width: 300px) and (max-width: 420px) {
+    .imageWidthIndex {
+        width: 100%;
+    }
+
     #aboutme-title {
         margin-bottom: 0;
         margin-top: 12px;
@@ -503,6 +509,10 @@ there.
 }
 
 @media screen and (min-width: 421px) and (max-width: 768px) {
+    .imageWidthIndex {
+        width: 100%;
+    }
+
     #aboutme-title {
         margin-bottom: 0;
         margin-top: 12px;
@@ -523,6 +533,7 @@ there.
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+
     #aboutme-title {
         margin-top: 20px;
     }
