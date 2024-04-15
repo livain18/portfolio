@@ -447,7 +447,7 @@ there.
 }
 /* lieven text about me kleiner op mobile */
 .imageWidthIndex {
-    display: block;
+    display: flex;
     overflow: hidden;
     position: relative;
     width: 60%;
@@ -466,6 +466,10 @@ there.
 }
 
 @media screen and (min-width: 300px) and (max-width: 420px) {
+    .padding-image-logo {
+        padding: 2em 0;
+    }
+
     .imageWidthIndex {
         width: 100%;
     }
@@ -509,6 +513,10 @@ there.
 }
 
 @media screen and (min-width: 421px) and (max-width: 768px) {
+    .padding-image-logo {
+        padding: 2em 0;
+    }
+    
     .imageWidthIndex {
         width: 100%;
     }
